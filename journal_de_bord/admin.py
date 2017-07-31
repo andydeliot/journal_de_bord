@@ -5,8 +5,7 @@ from .models import Journee, Souvenir
 
 class SouvenirInline(admin.TabularInline):
     model = Souvenir
-    extra = 0
-    max_num = 1
+    extra = 5
     
 
 class JourneeAdmin(admin.ModelAdmin):
