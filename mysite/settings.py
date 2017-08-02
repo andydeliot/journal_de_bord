@@ -25,7 +25,7 @@ SECRET_KEY = '0-@(=naz)7rmr(xttsf3(z18p=n+c##9x5#n^qnhrc7i2n6_q7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'journaldebord.pythonanywhere.com']
 
 
 # Application definition
