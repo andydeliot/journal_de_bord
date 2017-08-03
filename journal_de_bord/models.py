@@ -8,8 +8,7 @@ def aujourdhui():
     return arrow.utcnow().to("UTC+2")
 
 class Journee(models.Model):
-    jour = models.DateField(default=aujourdhui,
-                            unique=True)
+    jour = models.DateField(unique=True)
 
     def __str__(self):
         return arrow.get(self.jour).format("dddd DD MMMM YYYY", locale="fr_FR")
