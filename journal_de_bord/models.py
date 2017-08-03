@@ -18,7 +18,7 @@ class Journee(models.Model):
 class Souvenir(models.Model):
     journee = models.ForeignKey(Journee,
                                 on_delete=models.CASCADE)
-    texte = models.CharField(max_length=1000)
+    texte = models.CharField(max_length=10000)
 
     def __str__(self):
         return self.texte
