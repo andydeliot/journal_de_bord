@@ -17,7 +17,8 @@ class SouvenirInline(admin.TabularInline):
 
 class JourneeAdmin(admin.ModelAdmin):
     inlines = [SouvenirInline]
-
+    # date_hierarchy = "jour"
+    ordering = ["-jour"]
 
 admin.site.register(Journee, JourneeAdmin)
 admin.site.register(Souvenir)
