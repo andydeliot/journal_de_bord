@@ -14,7 +14,7 @@ class SouvenirInline(admin.TabularInline):
 
 
 class JourneeAdmin(admin.ModelAdmin):
-    TabularInlines = [SouvenirInline]
+    inlines = [SouvenirInline]
     ordering = ["-jour"]
 
 admin.site.register(Journee, JourneeAdmin)

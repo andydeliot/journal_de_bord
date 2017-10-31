@@ -23,6 +23,10 @@ class Journee(models.Model):
                              blank=True,
                              on_delete=models.SET_NULL)
 
+    def afficher(self):
+        souvenir = Souvenir.objects.filter(journee=self)
+        return str(self) + "\n" + "\n".join(souvenir)
+        
     def __str__(self):
         return arrow.get(self.jour).format("dddd DD MMMM YYYY", locale="fr_FR")
 
