@@ -16,8 +16,9 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 
+import journal_de_bord.views
+
 urlpatterns = [
-    #url(r'^admin/', admin.site.urls),
-    url(r'^', admin.site.urls),
-    # url(r'^', include('journal_de_bord.urls')),
+    url(r'^admin/', admin.site.urls),
+    url(r'^journal_de_bord', journal_de_bord.views.home),
 ]
