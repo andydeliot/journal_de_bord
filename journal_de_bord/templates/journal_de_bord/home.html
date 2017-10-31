@@ -1,19 +1,31 @@
 
+{% load bootstrap3 %}
 
-<h1> Journal de bord </h1>
+<!DOCTYPE html>
 
+{% bootstrap_css %}
+{% bootstrap_javascript %}
 
-{% for journee in journees %}
+<html>
+<head></head>
 
-	<h3>{{ journee }}</h3>
+<body>
 	
-	<ul>
-	{% for souvenir in journee.souvenirs %} <li>{{ souvenir }}</li> {% endfor %}
-	</ul>
-{% endfor %}
-		
+	<div class="col-lg-offset-4 col-lg-8">
+
+		<h1> Journal de bord </h1>
+
+		{% for journee in journees %}
+
+			<h3>{{ journee }}</h3>
+	
+			<ul>
+			{% for souvenir in journee.souvenirs %} <li>{{ souvenir }}</li> {% endfor %}
+			</ul>
+		{% endfor %}
+
+	</div>
+</body>
 
 
-
-
-
+</html>
