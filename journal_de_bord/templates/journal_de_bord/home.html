@@ -1,1 +1,20 @@
-<h1>Hello, world !</h1>
+
+
+<h1> Journal de bord </h1>
+
+
+{{ for journee in journees }}
+
+	<h3>{% journee %}</h3>
+	
+	<ul>
+	{{ for souvenir in journee.souvenirs }}
+		<li>{% souvenir %}</li>
+	</ul>
+
+		
+
+
+
+
+
