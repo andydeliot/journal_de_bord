@@ -14,6 +14,7 @@ class Journee(models.Model):
     lever = models.TimeField()
     lieu = models.ForeignKey(Lieu,
                              null=True,
+                             blank=True,
                              on_delete=models.SET_NULL)
 
     def __str__(self):
