@@ -20,5 +20,5 @@ import journal_de_bord.views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^journal_de_bord', journal_de_bord.views.home),
+    url(r'^$', journal_de_bord.views.home),
 ]
