@@ -2,7 +2,7 @@ from django.contrib import admin
 from django.db import models
 from django.forms import TextInput, Textarea
 
-from .models import Journee, Souvenir
+from .models import Journee, Souvenir, Lieu
 
 # Register your models here.
 
@@ -22,3 +22,4 @@ class JourneeAdmin(admin.ModelAdmin):
 
 admin.site.register(Journee, JourneeAdmin)
 admin.site.register(Souvenir)
+admin.site.register(Lieu)
