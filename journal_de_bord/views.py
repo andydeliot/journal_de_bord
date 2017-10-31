@@ -1,8 +1,12 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
+from .models import Journee
+
 def home(request):
     """ Affiche toutes mes journées de mon journal de bord. """
-    return HttpResponse("<h1>Hello, world !</h1>")
+    journees = Journee.objects.all()
+    print(locals())
+    return render(request, "journal_de_bord/home.html", locals())
 
 

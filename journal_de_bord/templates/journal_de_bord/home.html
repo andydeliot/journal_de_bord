@@ -3,15 +3,14 @@
 <h1> Journal de bord </h1>
 
 
-{{ for journee in journees }}
+{% for journee in journees %}
 
-	<h3>{% journee %}</h3>
+	<h3>{{ journee }}</h3>
 	
 	<ul>
-	{{ for souvenir in journee.souvenirs }}
-		<li>{% souvenir %}</li>
+	{% for souvenir in journee.souvenirs %} <li>{{ souvenir }}</li> {% endfor %}
 	</ul>
-
+{% endfor %}
 		
 
 
