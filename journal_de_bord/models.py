@@ -40,3 +40,5 @@ class Souvenir(models.Model):
         return self.texte
 
 
+class HelloWorld(models.Model):
+    pass
