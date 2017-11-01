@@ -39,6 +39,3 @@ class Souvenir(models.Model):
     def __str__(self):
         return self.texte
 
-
-class HelloWorld(models.Model):
-    pass
