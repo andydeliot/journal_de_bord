@@ -10,7 +10,7 @@
 <head></head>
 
 <body>
-	
+
 	<div class="col-lg-offset-3 col-lg-6">
 
 		<h1> Journal de bord </h1>
@@ -18,7 +18,8 @@
 		{% for journee in journees %}
 
 			<h3>{{ journee }}</h3>
-	
+			<h4>Levé à {{ journee.lever }}. Durée de la journée : {{ journee.dure }}</h4>
+
 			<ul>
 			{% for souvenir in journee.souvenirs %} <li>{{ souvenir }}</li> {% endfor %}
 			</ul>
