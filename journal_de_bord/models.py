@@ -19,8 +19,7 @@ class Journee(models.Model):
     jour = models.DateField(unique=True)
     lever = models.TimeField(null=True,
                              blank=True)
-    dure = models.DurationField(null=True,
-                            blank=True)
+    dure = models.DurationField(null=True, blank=True)
     lieu = models.ForeignKey(Lieu,
                              null=True,
                              blank=True,
